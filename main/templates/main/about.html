@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h2 class="m-2"style="text-align: center"><strong>{{ content }}</strong></h2>
+        <br>
+        <div class="m-2"style="text-align: justify-all ; "> 
+            Добро пожаловать в наш магазин "COFHO"! Мы специализируемся на создании атмосферы уюта и комфорта в вашем доме. <br></p><p>У нас вы найдете все необходимые товары для того, чтобы сделать ваше пространство уютным и удобным. Мы предлагаем широкий выбор товаров: ароматические свечи, стильные стаканы, мягкие пледы, уютные подушки и многое другое. Наша продукция изготовлена из качественных материалов с учетом последних тенденций в дизайне интерьера. Мы стремимся помочь каждому клиенту создать свой уникальный уголок уюта и радости в своем доме. </p> 
+            <p>Каждый посетитель нашего интернет-магазина получает высококлассный современный сервис:</p><p></p><ul><li>удобная система поиска товаров;<br></li><li>постоянные сезонные скидки;<br></li><li>удобная система заказов и формы оплаты<br></li><li>привлекательные цены<br></li></ul><p></p> <br>
+    </div>
+{% endblock %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white"> </p>
+    </div>
+</footer>
+{% endblock %}

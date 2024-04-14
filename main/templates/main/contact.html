@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h2 class="m-2"style="text-align: center"><strong>{{ content }}</strong></h2>
+        <br>
+        <div class="m-2"style="text-align: justify-all ; "> 
+        <p> Магазин "COFHO"</p><p>Телефон: +7 (900) 322-32-28 </p><p>Электронная почта: cofhoshop@mail.ru </p><p>Следите за нашими новостями и акциями в социальных сетях: </p><p>Телеграм-канал: t.me/cofhoshop</p><p>Вконтаке: vk.com/cofhoshop<br></p>
+        <div class="m-2"style="text-align: center ; ">  <strong> <p>Будем рады видеть вас в нашем интернет-магазине! Создавайте уют вместе с нами! </p> <br>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white"> </p>
+    </div>
+</footer>
+{% endblock %}
